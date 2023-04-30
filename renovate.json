@@ -4,9 +4,5 @@
     "extends": [
       "docker:pinDigests",
       "regexManagers:dockerfileVersions"
-    ],
-    "packageRules": [{
-        "packageNames": ["gohugoio/hugo"],
-        "extractVersion": "^v(?<version>.*)$"
-    }]
+    ]
 }
