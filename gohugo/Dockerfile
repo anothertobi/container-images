@@ -1,4 +1,4 @@
-FROM docker.io/library/ubuntu:22.04@sha256:67211c14fa74f070d27cc59d69a7fa9aeff8e28ea118ef3babc295a0428a6d21
+FROM docker.io/library/ubuntu:22.10@sha256:a9a425d086dbb34c1b5b99765596e2a3cc79b33826866c51cd4508d8eb327d2b
 
 ARG TARGETPLATFORM=linux/arm64
  # renovate: datasource=github-releases depName=gohugoio/hugo
