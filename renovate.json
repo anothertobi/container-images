@@ -1,8 +1,18 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "branchPrefix": "renovate-",
-    "extends": [
-      "docker:pinDigests",
-      "regexManagers:dockerfileVersions"
-    ]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "branchPrefix": "renovate-",
+  "extends": [
+    "docker:pinDigests",
+    "regexManagers:dockerfileVersions"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "digest"
+      ],
+      "automerge": true,
+      "automergeType": "pr",
+      "platformAutomerge": true
+    }
+  ]
 }
