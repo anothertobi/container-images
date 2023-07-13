@@ -2,7 +2,7 @@ FROM docker.io/library/ubuntu:23.10@sha256:8abf9cea172b86fe77d65ef1abbdb186d06d1
 
 ARG TARGETPLATFORM=linux/arm64
 # renovate: datasource=github-releases depName=gohugoio/hugo
-ARG GOHUGO_VERSION=v0.114.1
+ARG GOHUGO_VERSION=v0.115.3
 
 WORKDIR /app
 
